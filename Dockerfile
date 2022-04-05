@@ -12,6 +12,7 @@ LABEL "maintainer"="Grant McConnaughey <grantmcconnaughey@gmail.com>"
 RUN pip install --upgrade pip
 RUN pip install flake8
 RUN pip install lintly
+RUN pip install markupsafe==2.0.1
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
